@@ -15,7 +15,7 @@ html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 .header-wrapper > .search {float: right; padding: 1em; cursor: pointer;}
 .header-wrapper > .search:hover {background-color: #f44336; color: #f9f9f9;}
 
-.header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5); }
+.header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5); transition: transform 0.5s; transition-timing-function: linear;}
 
 
 /******************* main-wrapper *********************/
