@@ -25,3 +25,7 @@ $(window).scroll(function () {
 		$('.header-wrapper').removeClass('active')
 	}
 })
+
+$('.mo-bars').click(function() {
+	$('.monavi-wrapper').toggleClass('active')
+})

@@ -19,7 +19,7 @@ html, body {font-family: 'Lato', sans-serif; color: #111; height: 8000px;}
 
 .header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5); transition: transform 0.5s; transition-timing-function: linear;}
 
-.monavi-wrapper {width: 100%; position: fixed; background-color: #fff;}
+.monavi-wrapper {width: 100%; position: fixed; top: 48px; background-color: #fff; display: none;}
 .monavi-wrapper > .monavi {padding: 1em;}
 .monavi-wrapper > .monavi:hover {background-color: #eee;}
 
@@ -67,6 +67,7 @@ html, body {font-family: 'Lato', sans-serif; color: #111; height: 8000px;}
 	.header-wrapper > .navi-wrap > .navi:not(:first-child) {display: none;}
 	.header-wrapper > .search {display: none;}
 	.header-wrapper > .mo-bars {display: block;}
+	.monavi-wrapper.active {display: block;}
 }
 
 
