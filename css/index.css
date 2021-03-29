@@ -2,7 +2,7 @@
 /* font-family: 'Lato', sans-serif; */
 
 /******************* common *********************/
-html, body {font-family: 'Lato', sans-serif; height: 8000px;}
+html, body {font-family: 'Lato', sans-serif; color: #111; height: 8000px;}
 
 
 /******************* header-wrapper *********************/
@@ -14,8 +14,14 @@ html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 .header-wrapper > .navi-wrap > .navi > a > .fa {margin-right: 0.25em;}
 .header-wrapper > .search {float: right; padding: 1em; cursor: pointer;}
 .header-wrapper > .search:hover {background-color: #f44336; color: #f9f9f9;}
+.header-wrapper > .mo-bars {float: right; padding: 1em; cursor: pointer; display: none;}
+.header-wrapper > .mo-bars:hover {background-color: #111; color: #f9f9f9; color: #f9f9f9;}
 
 .header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5); transition: transform 0.5s; transition-timing-function: linear;}
+
+.monavi-wrapper {width: 100%; position: fixed; background-color: #fff;}
+.monavi-wrapper > .monavi {padding: 1em;}
+.monavi-wrapper > .monavi:hover {background-color: #eee;}
 
 
 /******************* main-wrapper *********************/
@@ -58,7 +64,9 @@ html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 
 
 @media (max-width: 768px) {
-
+	.header-wrapper > .navi-wrap > .navi:not(:first-child) {display: none;}
+	.header-wrapper > .search {display: none;}
+	.header-wrapper > .mo-bars {display: block;}
 }
 
 
