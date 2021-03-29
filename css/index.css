@@ -3,7 +3,15 @@
 
 /******************* common *********************/
 html, body {font-family: 'Lato', sans-serif; color: #111; height: 8000px;}
-body > section {padding-top: 5em;}
+.wrapper {max-width: 960px; margin: auto;}
+section.wrapper {padding: 5em 1em;}
+section.wrapper >   .title {color: #777; text-align: center;}
+section.wrapper > h2.title {font-size: 1.5em; margin-bottom: 1.25em;}
+section.wrapper > h3.title {font-style: italic; margin-bottom: 1.5em; line-height: 1.5;}
+
+aside.title-bar {font-size: 2em; letter-spacing: 0.325em; color: #f9f9f9; text-align: center; padding: 5em 0; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
+aside.title-bar.pf-bar {background-image: url(../img/parallax2.jpg);}
+aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* header-wrapper *********************/
