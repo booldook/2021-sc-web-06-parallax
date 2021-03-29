@@ -2,11 +2,11 @@
 /* font-family: 'Lato', sans-serif; */
 
 /******************* common *********************/
-html, body {font-family: 'Lato', sans-serif;}
+html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 
 
 /******************* header-wrapper *********************/
-.header-wrapper {color: #777;}
+.header-wrapper {color: #777; position: fixed; width: 100%; z-index: 9;}
 .header-wrapper > .navi-wrap {float: left;}
 .header-wrapper > .navi-wrap > .navi {float: left;}
 .header-wrapper > .navi-wrap > .navi:hover {background-color: #ccc; color: #111;}
@@ -19,7 +19,8 @@ html, body {font-family: 'Lato', sans-serif;}
 
 
 /******************* main-wrapper *********************/
-
+.main-wrapper {height: 100vh; background: url(../img/parallax1.jpg) no-repeat center / cover; background-attachment: fixed;}
+.main-wrapper > .main-wrap {width: 100%; height: 100%; background-color: rgba(255, 255, 255, .25);}
 
 
 /******************* about-wrapper *********************/
