@@ -1,9 +1,21 @@
-/******************* common *********************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* font-family: 'Lato', sans-serif; */
 
+/******************* common *********************/
+html, body {font-family: 'Lato', sans-serif;}
 
 
 /******************* header-wrapper *********************/
+.header-wrapper {color: #777;}
+.header-wrapper > .navi-wrap {float: left;}
+.header-wrapper > .navi-wrap > .navi {float: left;}
+.header-wrapper > .navi-wrap > .navi:hover {background-color: #ccc; color: #111;}
+.header-wrapper > .navi-wrap > .navi > a {padding: 1em;}
+.header-wrapper > .navi-wrap > .navi > a > .fa {margin-right: 0.25em;}
+.header-wrapper > .search {float: right; padding: 1em; cursor: pointer;}
+.header-wrapper > .search:hover {background-color: #f44336; color: #f9f9f9;}
 
+.header-wrapper.active {color: #111; background-color: #fff; box-shadow: 0 0 8px rgba(0, 0, 0, .5);}
 
 
 /******************* main-wrapper *********************/
