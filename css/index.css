@@ -19,8 +19,9 @@ html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 
 
 /******************* main-wrapper *********************/
-.main-wrapper {height: 100vh; background: url(../img/parallax1.jpg) no-repeat center / cover; background-attachment: fixed;}
-.main-wrapper > .main-wrap {width: 100%; height: 100%; background-color: rgba(255, 255, 255, .25);}
+.main-wrapper {width: 100%; height: 100vh; background: url(../img/parallax1.jpg) no-repeat center / cover; background-attachment: fixed; display: table;}
+.main-wrapper > .main-wrap {display: table-cell; text-align: center; vertical-align: middle;  background-color: rgba(255, 255, 255, .25);}
+.main-wrapper > .main-wrap > h1.logo {display: inline-block; background-color: #111; color: #f9f9f9; font-size: 1.5em; padding: 0.5em 0.75em; letter-spacing: 0.325em;}
 
 
 /******************* about-wrapper *********************/
@@ -62,7 +63,7 @@ html, body {font-family: 'Lato', sans-serif; height: 8000px;}
 
 
 @media (max-width: 576px) {
-
+	.main-wrapper > .main-wrap > h1.logo > span {display: none;}
 }
 
 
