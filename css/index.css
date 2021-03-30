@@ -105,10 +105,18 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 /******************* contact-wrapper *********************/
 .contact-wrapper > .contact-outwrap > .loc-inwrap {width: 30%; float: left;}
 .contact-wrapper > .contact-outwrap > .loc-inwrap > img {border-radius: 5px;}
-.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%; margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap {margin-bottom: 1em;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info {font-size: 1.125em; margin-bottom: 0.25em;}
 .contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info > .fa {width: 40px;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .desc-wrap {margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input {padding: 0.625em; border: 1px solid #ccc; margin-bottom: 0.75em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='name'] {float: left; width: 49%;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='email'] {float: right; width: 49%;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='msg'] {float: left; width: 100%;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > button {float: right; background-color: #111; color: #f9f9f9; padding: 0.75em; line-height: 1;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > button:hover {background-color: #ccc; color: #111;}
+
 
 
 /******************* footer-wrapper *********************/
@@ -155,6 +163,8 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 @media (max-width: 576px) {
 	.main-wrapper > .main-wrap > h1.logo > span {display: none;}
 	.pf-wrapper > .pf-wrap > .pf {width: 98%;}
+	.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='name'] {width: 100%;}
+	.contact-wrapper > .contact-outwrap > .info-inwrap > .form-wrap > input[name='email'] {width: 100%;}
 }
 
 
