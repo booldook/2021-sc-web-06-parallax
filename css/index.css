@@ -2,7 +2,7 @@
 /* font-family: 'Lato', sans-serif; */
 
 /******************* common *********************/
-html, body {font-family: 'Lato', sans-serif; color: #777; line-height: 1.5; height: 8000px;}
+html, body {font-family: 'Lato', sans-serif; color: #777; line-height: 1.5;}
 .wrapper {max-width: 960px; margin: auto;}
 section.wrapper {padding: 5em 1em;}
 section.wrapper >   .title {text-align: center;}
@@ -120,6 +120,14 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* footer-wrapper *********************/
+.footer-wrapper {background-color: rgba(0, 0, 0, .5); padding: 4em 1em 6em 1em; color: #f9f9f9; text-align: center;}
+.footer-wrapper:hover {background-color: rgba(0, 0, 0, 1);}
+.footer-wrapper > .bt-top {background-color: #ddd; color: #111; padding: 0.625em 1em; margin-bottom: 1.5em;}
+.footer-wrapper > .bt-top:hover {background-color: #ccc; color: #111;}
+.footer-wrapper > .sns-wrap {text-align: center; margin-bottom: 1.5em;} 
+.footer-wrapper > .sns-wrap > .sns {display: inline-block; font-size: 1.25em; letter-spacing: 0.25em;} 
+.footer-wrapper > .copyright > a:link {text-decoration: underline;} 
+.footer-wrapper > .copyright > a:hover {color: #0aac0a; text-decoration: underline;} 
 
 
 
