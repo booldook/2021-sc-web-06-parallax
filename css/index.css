@@ -53,15 +53,50 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 .skill-wrapper > .title {text-align: center; font-size: 1.125em; margin-bottom: 2em;}
 .skill-wrapper > .skill-wrap > .skill {margin-bottom: 1.5em;}
 .skill-wrapper > .skill-wrap > .skill > .title {letter-spacing: 0.5em; margin-bottom: 0.75em;}
-.skill-wrapper > .skill-wrap > .skill > .bar-wrap {background-color: #eee;}
-.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar {background-color: #444; color: #f9f9f9; text-align: center; padding: 0.5em;}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap {background-color: #eee; position: relative;}
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar {background-color: #444; color: #f9f9f9; text-align: center; padding: 1.25em; animation-duration: 1s; animation-fill-mode: forwards;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar {width: 95%;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar {width: 85%;}
 .skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar {width: 70%;}
 
+.skill-wrapper > .skill-wrap > .skill > .bar-wrap > .bar > span {position: absolute; top: 0.5em;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(1) > .bar-wrap > .bar > span {left: 45%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2) > .bar-wrap > .bar > span {left: 40%;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3) > .bar-wrap > .bar > span {left: 32.5%;}
+
+.skill-wrapper > .skill-wrap > .skill:nth-child(1):hover > .bar-wrap > .bar {animation-name: bar1;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(2):hover > .bar-wrap > .bar {animation-name: bar2;}
+.skill-wrapper > .skill-wrap > .skill:nth-child(3):hover > .bar-wrap > .bar {animation-name: bar3;}
+
+
+@keyframes bar1 {
+	from {width: 0;}
+	to {width: 95%;}
+}
+
+@keyframes bar2 {
+	from {width: 0;}
+	to {width: 85%;}
+}
+
+@keyframes bar3 {
+	from {width: 0;}
+	to {width: 70%;}
+}
+
+/******************* client-bar *********************/
+.client-bar {background-color: #333; color: #f9f9f9; text-align: center;}
+.client-bar > .client-wrap {background-color: #333; color: #f9f9f9;}
+.client-bar > .client-wrap > .client {width: 25%; float: left; padding: 2em;}
+.client-bar > .client-wrap > .client > h4.count{font-size: 1.5em;}
+
 
 /******************* pf-wrapper *********************/
-
+.pf-wrapper {overflow: hidden;}
+.pf-wrapper > .pf-wrap {width: 102%;}
+.pf-wrapper > .pf-wrap > .pf {float: left; width: 23%; margin: 0 2% 2% 0; cursor: pointer; overflow: hidden; background-color: #000;}
+.pf-wrapper > .pf-wrap > .pf > img {transition: all 0.35s;}
+.pf-wrapper > .pf-wrap > .pf:hover > img {opacity: .75; transform: scale(1.2);}
 
 
 /******************* contact-wrapper *********************/
@@ -85,6 +120,7 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 @media (max-width: 992px) {
+	.pf-wrapper > .pf-wrap > .pf {width: 48%;}
 }
 
 
@@ -94,11 +130,13 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 	.header-wrapper > .mo-bars {display: block;}
 	.monavi-wrapper.active {display: block;}
 	.about-wrap > div {width: 100%;}
+	.client-bar > .client-wrap > .client {width: 100%; border-bottom: 1px solid #555;}
 }
 
 
 @media (max-width: 576px) {
 	.main-wrapper > .main-wrap > h1.logo > span {display: none;}
+	.pf-wrapper > .pf-wrap > .pf {width: 98%;}
 }
 
 
