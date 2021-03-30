@@ -103,7 +103,10 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* contact-wrapper *********************/
-
+.contact-wrapper > .contact-outwrap > div {}
+.contact-wrapper > .contact-outwrap > .loc-inwrap {width: 30%; float: left;}
+.contact-wrapper > .contact-outwrap > .loc-inwrap > img {border-radius: 5px;}
+.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%;}
 
 
 /******************* footer-wrapper *********************/
