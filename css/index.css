@@ -8,7 +8,7 @@ section.wrapper {padding: 5em 1em;}
 section.wrapper >   .title {text-align: center;}
 section.wrapper > h2.title {font-size: 1.5em; margin-bottom: 1.25em;}
 section.wrapper > h3.title {font-style: italic; margin-bottom: 1.5em;}
-section.wrapper > p.content { margin-bottom: 1.5em;}
+section.wrapper > p.content {margin-bottom: 1.5em;}
 
 aside.title-bar {font-size: 2em; letter-spacing: 0.325em; color: #f9f9f9; text-align: center; padding: 5em 0; background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
 aside.title-bar.pf-bar {background-image: url(../img/parallax2.jpg);}
@@ -41,12 +41,13 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* about-wrapper *********************/
-.about-wrap {}
+.about-wrapper {text-align: justify;}
 .about-wrap > div {width: 50%; float: left; padding: 1em;}
 .about-wrap > .photo-wrap {text-align: center;}
 .about-wrap > .photo-wrap > .name {margin-bottom: 2em;}
 .about-wrap > .photo-wrap > .photo {border-radius: 5px; overflow: hidden;}
-.about-wrap > .cont-wrap {}
+.about-wrap > .photo-wrap > .photo > img {transition: all .5s;}
+.about-wrap > .photo-wrap > .photo:hover > img {transform: scale(1.1);}
 
 
 /******************* pf-wrapper *********************/
@@ -74,7 +75,6 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 @media (max-width: 992px) {
-
 }
 
 
@@ -83,6 +83,7 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 	.header-wrapper > .search {display: none;}
 	.header-wrapper > .mo-bars {display: block;}
 	.monavi-wrapper.active {display: block;}
+	.about-wrap > div {width: 100%;}
 }
 
 
