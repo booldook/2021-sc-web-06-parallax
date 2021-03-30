@@ -92,11 +92,14 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* pf-wrapper *********************/
-.pf-wrapper {overflow: hidden;}
-.pf-wrapper > .pf-wrap {width: 102%;}
+.pf-wrapper {overflow: hidden; text-align: center;}
+.pf-wrapper > .pf-wrap {width: 102%; margin-bottom: 1em;}
 .pf-wrapper > .pf-wrap > .pf {float: left; width: 23%; margin: 0 2% 2% 0; cursor: pointer; overflow: hidden; background-color: #000;}
 .pf-wrapper > .pf-wrap > .pf > img {transition: all 0.35s;}
 .pf-wrapper > .pf-wrap > .pf:hover > img {opacity: .75; transform: scale(1.2);}
+.pf-wrapper > .bt-more {padding: 0.75em 1.25em; background-color: #eee; color: #111;}
+.pf-wrapper > .bt-more:hover {background-color: #bbb;}
+
 
 
 /******************* contact-wrapper *********************/
