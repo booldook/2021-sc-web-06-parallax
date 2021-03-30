@@ -107,6 +107,13 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 
+/******************* modal-wrapper *********************/
+.modal-wrapper {position: fixed; z-index:10; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, .75); top:0; left: 0; text-align: center; padding-top: 20vh; color: #f9f9f9;}
+.modal-wrapper > .modal-wrap {border: 1px solid red; display: inline-block;}
+.modal-wrapper > .modal-close {position: absolute; top: 0; right: 0; width: 50px; height: 50px; line-height: 50px; cursor: pointer;}
+.modal-wrapper > .modal-close:hover {background-color: #ccc; color: #111;}
+
+
 
 /******************* Response *********************/
 @media (max-width: 1400px) {
