@@ -103,10 +103,12 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 
 
 /******************* contact-wrapper *********************/
-.contact-wrapper > .contact-outwrap > div {}
 .contact-wrapper > .contact-outwrap > .loc-inwrap {width: 30%; float: left;}
 .contact-wrapper > .contact-outwrap > .loc-inwrap > img {border-radius: 5px;}
-.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%;}
+.contact-wrapper > .contact-outwrap > .info-inwrap {width: 70%; float: right; padding-left: 3%; margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap {margin-bottom: 1em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info {font-size: 1.125em; margin-bottom: 0.25em;}
+.contact-wrapper > .contact-outwrap > .info-inwrap > .info-wrap > .info > .fa {width: 40px;}
 
 
 /******************* footer-wrapper *********************/
@@ -145,6 +147,8 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 	.monavi-wrapper.active {display: block;}
 	.about-wrap > div {width: 100%;}
 	.client-bar > .client-wrap > .client {width: 100%; border-bottom: 1px solid #555;}
+	.contact-wrapper > .contact-outwrap > .loc-inwrap {width: 100%;}
+	.contact-wrapper > .contact-outwrap > .info-inwrap {width: 100%; padding-top: 3%; padding-left: 0;}
 }
 
 
