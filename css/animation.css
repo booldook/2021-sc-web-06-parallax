@@ -1,0 +1,16 @@
+.title {padding: 2em; text-align: center; font-size: 2em; text-decoration: underline;}
+.wrapper {max-width: 1200px; margin: auto;}
+.box {width: 100px; height: 100px; margin: 1em 0;}
+.box1 {background-color: lightcoral; animation-name: ani1; animation-duration: 3s; animation-iteration-count: infinite;}
+.box2 {background-color: lightseagreen;}
+
+@keyframes ani1 {
+	0% {transform: translateX(0) rotate(0) scale(1);}
+	50% {transform: translateX(900px) rotate(360deg) scale(2);}
+	100% {transform: translateX(0) rotate(0) scale(1);}
+}
+
+/* @keyframes ani1 {
+	from {}
+	to {}
+} */
