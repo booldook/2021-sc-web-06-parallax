@@ -165,6 +165,8 @@ aside.title-bar.contact-bar {background-image: url(../img/parallax3.jpg);}
 	.client-bar > .client-wrap > .client {width: 100%; border-bottom: 1px solid #555;}
 	.contact-wrapper > .contact-outwrap > .loc-inwrap {width: 100%;}
 	.contact-wrapper > .contact-outwrap > .info-inwrap {width: 100%; padding-top: 3%; padding-left: 0;}
+	aside.title-bar {background-attachment: unset;}
+	.main-wrapper {background-attachment: unset;}
 }
 
 
